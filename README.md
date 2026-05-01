@@ -1,10 +1,10 @@
 # CS-300 Data Structures and Algorithms Portfolio
 
-CS-300 portfolio repository for my ABCU advising assistance program. This project demonstrates data structure analysis, algorithm selection, C++ implementation, file parsing, input validation, and reflection on writing maintainable software.
+CS-300 portfolio repository for my ABCU advising assistance program. This project demonstrates data structure analysis, algorithm selection, C++ implementation, CSV file parsing, input validation, and maintainable software design.
 
 ## Project Overview
 
-The main problem I addressed was creating an advising assistance program for ABCU academic advisors. The program needed to load course data from a CSV file, display all available courses in alphanumeric order, and allow users to retrieve information for a specific course, including prerequisites.
+The main problem I addressed was creating an advising assistance program for ABCU academic advisors. The program needed to load course data from a CSV file, display available courses in alphanumeric order, and allow users to retrieve information for a specific course, including prerequisites.
 
 This required building a data management system that could organize course records, support quick lookups, validate input, and present course information clearly to the user.
 
@@ -49,15 +49,31 @@ The project also included analysis of other data structures, including vectors a
 - C++17 or newer
 - Visual Studio, g++, or another C++ compiler
 
-### Example Run
-
-Compile and run `ProjectTwo.cpp`, then enter the path to the CSV file when prompted.
-
-Example input file:
+### Example Input File
 
 ```text
 CS 300 ABCU_Advising_Program_Input.csv
 ```
+
+### Example Compile Command
+
+```bash
+g++ ProjectTwo.cpp -o ProjectTwo
+```
+
+### Example Run Command
+
+```bash
+./ProjectTwo
+```
+
+On Windows, run:
+
+```bash
+ProjectTwo.exe
+```
+
+## Menu Options
 
 The program menu allows the user to:
 
@@ -72,7 +88,7 @@ The program menu allows the user to:
 
 - C++ programming
 - Data structure analysis
-- Hash table implementation using `unordered_map`
+- Hash table implementation
 - CSV file parsing
 - Input validation
 - Error handling
@@ -116,12 +132,18 @@ Additionally, I focused on keeping the code adaptable for potential future requi
 
 ## Project Value
 
-This project shows my ability to analyze a problem, compare data structure options, select an appropriate implementation strategy, and build a functional C++ console application. It is strongest for demonstrating foundational software engineering skills, algorithmic thinking, data handling, input validation, and maintainable program design.
+This project shows my ability to analyze a problem, compare data structure options, select an appropriate implementation strategy, and build a functional C++ console application.
+
+It is strongest for demonstrating foundational software engineering skills, algorithmic thinking, data handling, input validation, and maintainable program design.
 
 ## Future Improvements
 
-- Reformat `ProjectTwo.cpp` for improved GitHub readability
 - Add a `.gitignore` file for C++ and Visual Studio artifacts
 - Add screenshots directly to the README
-- Add clearer compile/run commands for Visual Studio and g++
+- Add clearer compile/run instructions for Visual Studio
 - Organize documents and screenshots into `docs/` and `media/` folders
+- Add more defensive validation for malformed CSV rows
+
+## Academic Portfolio Notice
+
+This repository is shared as an academic portfolio artifact. It may include coursework documentation and assignment-specific material created for an educational setting. Please do not reuse, submit, or redistribute this work as your own.
